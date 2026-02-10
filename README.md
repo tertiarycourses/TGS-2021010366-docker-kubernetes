@@ -18,12 +18,14 @@ Hands-on Docker labs covering core concepts from basic containers to multi-servi
 | lab9 | Docker Hub | Push and pull images |
 | lab10 | Docker Compose | Single service with Compose |
 | lab11 | Multi-Service Compose | Flask + Redis with Compose |
+| lab12 | Full-Stack Compose | Web + PostgreSQL + Redis with healthchecks |
 
 ## Tests
 
 | Test | Description |
 |------|-------------|
 | test1 | Practical test covering labs 1–9 (Dockerfile, build, run, push) |
+| test2 | Practical test covering labs 10–12 (WordPress with Docker Compose) |
 
 ## Getting Started
 
