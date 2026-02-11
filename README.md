@@ -1,8 +1,8 @@
 # TGS-2021010366-docker-kubernetes
 
-Hands-on Docker labs covering core concepts from basic containers to multi-service Docker Compose applications.
+Hands-on Docker and Kubernetes labs covering core concepts from basic containers to deployments and services.
 
-## Labs
+## Docker Labs
 
 | Lab | Topic | Description |
 |-----|-------|-------------|
@@ -11,7 +11,7 @@ Hands-on Docker labs covering core concepts from basic containers to multi-servi
 | lab3 | Python Container | Build and run a simple Python print app |
 | lab3-2 | Tetris Game | Run a static web app (Tetris) with Nginx |
 | lab4 | Flask App | Build a Flask web app with Docker |
-| lab5 | Volumes | Persist data with named volumes |
+| lab5 | Volumes | Persist data with named volumes and bind mounts |
 | lab5-2 | Dockerfile Volumes | VOLUME instruction in Dockerfile |
 | lab6 | Networks | Container networking and DNS |
 | lab7 | Port Mapping | Host vs container ports |
@@ -22,18 +22,32 @@ Hands-on Docker labs covering core concepts from basic containers to multi-servi
 | lab11 | Multi-Service Compose | Flask + Redis with Compose |
 | lab12 | Full-Stack Compose | Web + PostgreSQL + Redis with healthchecks |
 
+## Kubernetes Labs
+
+| Lab | Topic | Description |
+|-----|-------|-------------|
+| lab13 | Pods | Create, inspect, and delete Pods (imperative and declarative) |
+| lab14 | Namespaces | Create and manage namespaces |
+| lab15 | Deployments | Replicas, scaling, and self-healing |
+| lab16 | Rollouts & Rollbacks | Rolling updates and version rollback |
+| lab17 | Services | ClusterIP, NodePort, and exposing Pods |
+| lab18 | Volumes | emptyDir, Persistent Volumes, and PVCs |
+| lab19 | Jobs & CronJobs | One-time and scheduled tasks |
+
 ## Tests
 
 | Test | Description |
 |------|-------------|
-| test1 | Practical test covering labs 1–9 (Dockerfile, build, run, push) |
-| test2 | Practical test covering labs 10–12 (WordPress with Docker Compose) |
+| test1 | Practical test covering Docker labs 1–9 (Dockerfile, build, run, push) |
+| test2 | Practical test covering Docker labs 10–12 (WordPress with Docker Compose) |
+| test3 | Practical test on Kubernetes core concepts (Pods, namespaces) |
+| test4 | Practical test on Kubernetes volumes and services |
 
 ## Getting Started
 
 ```bash
-# Start with lab1
-cd lab1
+# Start with Docker lab1
+cd docker/lab1
 # Follow the instructions in lab.md
 ```
 
@@ -42,3 +56,4 @@ Each lab folder contains a `lab.md` with step-by-step commands to follow.
 ## Prerequisites
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [kubectl](https://kubernetes.io/docs/tasks/tools/) (for Kubernetes labs)
