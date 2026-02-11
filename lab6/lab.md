@@ -10,9 +10,9 @@ docker network create my-net
 # Inspect a network
 docker network inspect my-net
 
-# Run two containers on the same network
-docker run -d --name app1 --network my-net lab4
-docker run -d --name app2 --network my-net lab4
+# Run two containers on the same network (busybox has ping built-in)
+docker run -d --name app1 --network my-net busybox sleep 3600
+docker run -d --name app2 --network my-net busybox sleep 3600
 
 # Containers on the same network can reach each other by name
 docker exec app1 ping -c 2 app2
